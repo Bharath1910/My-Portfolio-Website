@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url("./assets/background.png");
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 40px 50px;
+}
+
+main h1 {
+    font-size: 80px;
+    color: #a1a1a1;
+    font-family: "Kanit";
+}
+
+.card {
+    backdrop-filter: blur(7px) saturate(180%);
+    -webkit-backdrop-filter: blur(7px) saturate(180%);
+    background-color: rgba(25, 36, 56, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.socials {
+    display: flex;
+
+    justify-content: center;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #a1a1a1;
+    padding: 0 12px;
+    padding-top: 15px;
+
+    font-size: 30px;
+}
+
+
