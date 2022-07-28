@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+:root {
+    --vibrant-color: #5cecbf
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Comfortaa";
+}
+
+header {
+    background-image: url("./assets/background.png");
+    height: 100vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+nav {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+.logo img {
+    width: 64px;
+
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    color: #ffffff;
+
+    font-family: "Comfortaa";
+    gap: 60px;
+}
+
+.nav-items {
+    text-transform: capitalize;
+}
+
+.nav-items span {
+    color: var(--vibrant-color);
+    font-family: "Poppins";
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.landing p:first-child {
+    color: var(--vibrant-color);
+    font-family: "Poppins";
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.landing h1:nth-child(2) {
+    font-size: 70px;
+    font-family: "Comfortaa";
+    font-weight: 700; 
+    color: #ffffff;
+}
+
+.landing h1:nth-child(3) {
+    font-size: 60px;
+    color: rgb(185, 185, 185);
+}
+
+.landing span {
+    color: var(--vibrant-color);
+}
+
+.landing p:nth-child(4) {
+    color: #ffffff;
+    width: 500px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.landing a {
+    color: var(--vibrant-color);
+    text-decoration: none;
+
+    border: 1px solid var(--vibrant-color);
+    width: fit-content;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
