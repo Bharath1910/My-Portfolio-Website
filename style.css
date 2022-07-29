@@ -135,6 +135,11 @@ nav {
     font-weight: 700;
 }
 
+.nav-items a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .about-heading span {
     color: var(--vibrant-color);
 }
@@ -145,7 +150,7 @@ nav {
 }
 
 .about-content p {
-    /* font-size: 20px; */
+    font-size: 20px;
 
     width: 50%;
     flex-shrink: 0;
