@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: #0B153C; 
+    background-image: url("assets/bg_square.png");
+    /* background-color: #0B153C;  */
     /* #0F1B4A;  */
     /* #101D52; */
 }
@@ -124,7 +125,7 @@ nav {
     color: #ffffff;
 }
 .about-center {
-    background-image: url("./assets/bg_4.svg");
+    background-image: url("./assets/bg_curve.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
