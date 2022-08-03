@@ -156,7 +156,7 @@ nav {
 
 .about-content p {
     font-size: 20px;
-
+    text-align: justify;
     font-family: "prompt";
     width: 50%;
     flex-shrink: 0;
