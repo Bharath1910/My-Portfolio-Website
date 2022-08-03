@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 :root {
     --vibrant-color: #5cecbf ; 
     /* #f9f871*/
 }
 
 body {
-    background-image: url("assets/bg_square.png");
+    background-image: url("assets/bg_light.png");
     /* background-color: #0B153C;  */
     /* #0F1B4A;  */
     /* #101D52; */
@@ -156,10 +156,11 @@ nav {
 
 .about-content p {
     font-size: 20px;
-
+    text-align: justify;
+    font-family: "prompt";
     width: 50%;
     flex-shrink: 0;
-    line-height: 30px;
+    /* line-height: 30px; */
 }
 
 .about-content p span {
@@ -177,88 +178,6 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
-
-.blog-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.heading {
-    display: flex;
-    justify-content: space-between;
-
-    height: 40vh;
-    align-items: flex-end;
-    margin-bottom: 70px;
-}
-
-.heading h1 {
-    font-size: 50px;
-    font-family: "Comfortaa";
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.heading h1 span {
-    color: #5cecbf;
-}
-
-.blog-posts {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10rem;
-    width: 60vw;
-    color: #ffffff;
-}
-
-.blog {
-    width: 60vw;
-}
-
-.blog-post {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contents {
-    width: 25vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.contents p {
-    font-size: 20px;
-    color: #a8a8a8;
-}
-
-.contents h1 {
-    font-size: 50px;
-    font-family: "Comfortaa";
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.blog-img img {
-    width: 450px;
-    border-radius: 10px;
-}
-
-.btn,
-.contents a {
-    color: var(--vibrant-color);
-    text-decoration: none;
-
-    border: 1px solid var(--vibrant-color);
-    width: fit-content;
-    height: fit-content;
-    padding: 15px 40px;
-    border-radius: 5px;
-}
-
 
 .footer-center {
     display: flex;
@@ -285,3 +204,131 @@ footer a {
     text-decoration: none;
     color: var(--vibrant-color)
 }
+
+/* .blog-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.blogs {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.latest-post {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.post {
+    width: 20%;
+    flex-shrink: 0;
+
+}
+
+.latest-post .blog-img img {
+    width: 100%;
+}
+
+.latest-post .content {
+    width: 100%;
+    
+    /* display: flex;
+    flex-direction: column; 
+}
+
+.post .blog-img img {
+    width: 100%;
+}
+
+.post .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 300px;
+} */
+
+
+/* START */
+.band {
+    width: 80%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+@media (min-width: 30em) {
+    .band {
+        grid-template-columns: 1fr 1fr;
+   }
+}
+@media (min-width: 60em) {
+    .band {
+        grid-template-columns: repeat(4, 1fr);
+   }
+}
+.card {
+    background: #060E2A;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+}
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+.card article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+}
+.card p {
+    flex: 1;
+    line-height: 1.4;
+}
+.card span {
+    font-family: "prompt";
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 2em 0 0 0;
+}
+.card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+}
+@media (min-width: 60em) {
+    .item-1 {
+        grid-column: 1 / span 2;
+   }
+    .item-1 h1 {
+        font-size: 24px;
+   }
+}
+
+/* OVER */
